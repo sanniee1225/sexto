@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensadora piensa ya 💭</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>Adivina adivinadora 😛</h1>
+    <div class="frase-linda">Conocerte ha sido lo más hermoso que me pudo haber pasado en la vida. Te amo muchísimo, mi
+        princesa 💕</div>
+
+    <button class="boton-mision" id="btn-mision">Ver misión</button>
+    
+    <div class="inventario">
+        <div class="item" onclick="abrirModal(1)">Mes 1</div>
+        <div class="item" onclick="abrirModal(2)">Mes 2</div>
+        <div class="item" onclick="abrirModal(3)">Mes 3</div>
+        <div class="item" onclick="abrirModal(4)">Mes 4</div>
+        <div class="item" onclick="abrirModal(5)">Mes 5</div>
+        <div class="item" onclick="abrirContraseña()">Mes 6 🔒</div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <img id="img-modal" src="" alt="imagen">
+            <p id="texto-modal"></p>
+            <button class="cerrar" onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="modal-contraseña" class="modal">
+        <div class="modal-content">
+            <p>Introduce la palabra secreta en MAYÚSCULAS 💌</p>
+            <input type="text" id="input-pass" placeholder="Escribe aquí...">
+            <button onclick="verificarContraseña()">Desbloquear</button>
+            <button class="cerrar" onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="modal-final" class="modal">
+        <div class="modal-content">
+            <h3>🔥¡Desbloqueaste la sorpresa!😳</h3>
+            <img src="static/images/img6.png" alt="freenbecky">
+            <p>Mi bebita hermosaaa 💞
+                Oyeee, qué inteligente, supiste la contraseña 😳🔥 AJKSAJKAS.
+                Ya son seis meses contigoooo, medio año, y aún me cuesta creer que sea real 🕊️. Desde que llegaste, mi
+                vida cambió por completo. Todo empezó con unas simples conversaciones, momentos divertidos, pero poco a
+                poco fuiste siendo alguien a quien no he querido perder. Has estado ahí para mí, y de verdad te lo
+                agradezco muchísimo. Siempre pienso en lo afortunada que soy
+                por tenerte. Me encanta cómo eres, cómo hablas, cómo me haces bromas, y cómo logras sacarme una sonrisa
+                incluso cuando estoy triste. Tienes algo que te hace única, y eso es lo que te hace tan especial para mí
+                💘. Todos los días me imagino un futuro contigo. Me veo pasando buenos momentos, cumpliendo años
+                juntaaasss,
+                compartiendo una casa y una familia. Porque sí, me sigo imaginando una vida a tu lado, y de verdad
+                espero que podamos cumplir todo eso que queremos sioksiok. Gracias por quedarte a mi lado durante todo
+                este tiempo, por soportarme EWKEKJWEK, y por
+                hacerme sentir amada de una manera tan linda. Gracias por existir y por ser siempre mi todo.
+                Ojalá te guste mi regalo y te haga feliizzz, porque lo hice con todo mi amor pensando en tiii 💕 Y
+                buenooo, felicidades por nuestro 6to mes de novias! 💘💘💘</p>
+            <button class="cerrar" onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
